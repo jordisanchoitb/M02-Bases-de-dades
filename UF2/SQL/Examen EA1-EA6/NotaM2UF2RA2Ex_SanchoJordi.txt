@@ -1,0 +1,29 @@
+Exercici 7. (0,5 punts)
+Insereix 5 socis a la taula soci amb dades inventades. Tots els camps han de tenir un valor, i
+comprova que s’han insertat correctament.  
+
+Esta tot correcta, l'unic que yo poso la clau primaria en camvi en la correccio no esta 
+ja que en principi el camp es serial i s'autoincrementar ell mateix.  
+
+
+Exercici 17. (0,25 punts)
+Crea un índex únic anomenat llibre_idx sobre el camp isbn de la taula llibre i comprova que
+s’ha creat correctament.  
+
+la sintaxis esta be sol a faltat posar el unique ja que ho demana la activitat
+
+
+Exercici 19. (0,75 punt)
+Actualitza el codi del llibre amb idllibre igual a 2121213. El nou codi és 3121213. Si no es
+pot modificar explica perquè i realitza els canvis que siguin necessaris a l‘estructura de les
+taules perquè aquest valor es pugui actualitzar. Comprova que realment s'ha pogut actualitzar.  
+
+Jo directament vaig fer un update cascade per cambiar tots els valors 
+en cas de que estiguin referenciats a altres taules com era aquest el cas, el que has fet tu es
+modificar la taula eliminan la CONSTRAINT de llibre y tornarla a crear perq es canvi automaticament sol fent el canvi en la taula pare.
+
+
+La nota que hem posaria seria un 9,2.
+(Act1)1,5 + (Act2)0,35 + (Act3)0,25 + (Act4)0,1 + (Act5)0,5 + (Act6)0,25 + (Act7)0,25 + 
+(Act8)0,25 + (Act9)0,5 + (Act10)0,5 + (Act11)0,75 + (Act12)0,25 + (Act13)0,75 + (Act14)0,25 + (Act15)0,25 + (Act16)0,25 + 
+(Act17)0,25 + (Act18)0,25 + (Act19)0,25 + (Act20)1,5 = (9,2)

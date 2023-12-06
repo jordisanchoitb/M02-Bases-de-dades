@@ -1,0 +1,17 @@
+1. Correcta 0.25
+2. he fet consulta a dos taules en y tu has utilitzat 1 0.15
+3. he fet consulta a dos taules en comptes de utilitzar una com has fet tu 0.15
+4. he fet la consulta a dos taules en comptes de utilitzar una com tu has fet 0.25
+5. Correcta 0.5
+6. Incorrecta 0
+7. Incorrecta 0
+8. Correcta 0.5
+9. Vaig entendre que tenia que juntar las columnes dir amb el nom i l'edad en una sola columne i no vaig especificar de quina taula era pero el resultat es correcta 0.35
+10. Correcta 0.75
+11. Correcta 0.75
+12. Correcta 1
+13. Incorrecta 0
+14. Esta mig correcta ja que no poso exactament el mateix que tu pero em dona el resoltat esperat 0.45
+15. Incorrecta no hem va donar temps pero no anaba malament encaminat
+
+Nota final 5

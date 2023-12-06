@@ -1,0 +1,9 @@
+[] Clau primaria
+{} Clau Foranea
+
+PERSONES([DNI], Nom, PrimerCognom, SegonCognom, Adreça, Telefon)
+PERIODISTA({[DNI]}, Especialitat)
+EMPLEAT({[DNI]}, DataIncerccio, {IDSucursal})
+SUCURSAL([IDSucursal], Adreça, Telefon)
+REVISTA([NumeroRegistre], Nom, Periodicitat, Tipus)
+Escriu([{DNIPeridista}, {NumeroRegistre}])

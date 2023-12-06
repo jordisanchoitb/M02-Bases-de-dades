@@ -1,0 +1,23 @@
+/*Exercici 1*/
+Correcta 1p
+
+/*Exercici 2*/
+Correcta 1,5p
+
+/*Exercici 3*/
+Incorrecte 0p
+
+/*Exercici 4*/
+Correcta 1,5p
+
+/*Exercici 5*/
+Els resultat es correcta 
+pero no es exactament igual 
+que la teva solucio. 1p
+
+/*Exercici 6*/
+Els resultat es correcta 
+pero no es exactament igual 
+que la teva solucio. 1,25p
+
+Total 6,25p
