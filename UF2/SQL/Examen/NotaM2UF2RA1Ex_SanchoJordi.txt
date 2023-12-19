@@ -1,0 +1,31 @@
+Exercici1: Correcta 0.75p
+Exercici2: Correcta 0.25p
+Exercici3: Correcta 0.25p
+Exercici4: La tinc diferent a tu pero em va funcionar 0.25p
+Exercici5: Correcta 0.25p
+Exercici6: Correcta 0.25p
+Exercici7: Correcta 0.25p
+Exercici8: Correcta 0.5p
+Exercici9: Correcta 0.5p
+Exercici10: No vaig acabar de entendre que tenia que fer i 
+la vaig saltar ja que si no no em donaba temps per las demes preguntes.
+
+Exercici11: Correcta 0.5p
+Exercici12: Incorrecta 0p
+Exercici13: Incorrecta 0p
+Exercici14: Es correcta pero en coptes de fer '%Sue%' he posat directament
+el nom sencer 'Sue Smith' 0.25p
+
+Exercici15: Es correcta pero no faig servir un join crido directament
+las dos taules en el from 0.25p
+
+Exercici16: Correcta 0.5p
+Exercici17: Correcta 0.5p
+Exercici18: Correcta 0.5p
+Exercici19: Correcta 0.5p
+Exercici20: Correcta 0.5p
+Exercici21: Es correcta pero esta fet de diferent forma i en coptes 
+de multiplicarlo per (0.02) ho vaig fer per (0.2) 0.25p 
+Exercici22: No feta no em va donar temps
+
+Total nota calculada : 7
