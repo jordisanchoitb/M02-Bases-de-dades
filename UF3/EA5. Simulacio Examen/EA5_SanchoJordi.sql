@@ -9,7 +9,7 @@ do $$
     DECLARE
         vnum1 NUMERIC = :'Donem un numero';
         vnum2 NUMERIC = :'Donem un altre numero';
-        var_resultat numeric=1;
+        var_resultat numeric = 1;
     begin
         if vnum1 < 0 or vnum2 < 0 then
             RAISE NOTICE 'El dos numeros tenen que ser positius';
