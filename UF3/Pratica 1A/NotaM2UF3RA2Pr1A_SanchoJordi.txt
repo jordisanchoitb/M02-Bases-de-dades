@@ -1,0 +1,13 @@
+Exercici1: Correcta 0.5p
+el exercici es correcte pero em dona error perque vaig posar la datas al reves
+i em peta per culpa de posar las datas el reves pero las posas de la seguent forma
+BETWEEN '1988-1-1' and '1988-12-31' i funciona perfectament
+Exercici2: Correcta 1p
+Exercici3: Incorrecta 0p 
+ja que em costa entrendra com resoldre consultes una mica complexes que sigui necesari
+el us de el group by i no dona el resultat que esperas pero tot lo demes del ejercici esta be
+Exercici4: Correcta 2p
+Exercici5: Correcta 2p
+Exercici6: Correcta 2p
+
+Total nota calculada : 7.5
