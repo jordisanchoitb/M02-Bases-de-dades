@@ -16,6 +16,14 @@ BEFORE INSERT ON departments
 FOR EACH ROW
 EXECUTE PROCEDURE func_trig_nom_departament_notnull();
 
+/*Joc de proves*/
+/*insert correcta*/
+INSERT INTO departments (department_id, department_name, manager_id, location_id) VALUES (300, NULL, 100, 1700);
+/*insert que peta*/
+INSERT INTO departments (department_id, department_name, manager_id, location_id) VALUES (300, 'IT', 100, 1700);
+
+
+
 /*Exercici 2. Programar un trigger associat a la taula EMPLOYEES. El trigger s’anomenarà
 trig_restriccions_emp i ha de controlar les següents situacions:
 Quan inserim un nou empleat no pot tenir un salari negatiu.
@@ -45,10 +53,19 @@ BEFORE INSERT OR UPDATE ON employees
 FOR EACH ROW
 EXECUTE PROCEDURE func_trig_restriccions_emp();
 
+/*Joc de proves*/
+/*Aquest insert no petarà*/
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id) VALUES (300, 'Jordi', 'Sancho', 'jsancho', '123456789', '2019-01-01', 'IT_PROG', 1000, 0.1, 100, 90);
+/*Aquest insert petarà*/
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id) VALUES (300, 'Jordi', 'Sancho', 'jsancho', '123456789', '2019-01-01', 'IT_PROG', 500, 0.1, 100, 90);
+/*Aquest update no petarà*/
+UPDATE employees SET salary = 1000 WHERE employee_id = 300;
+/*Aquest update petarà*/
+UPDATE employees SET salary = 500 WHERE employee_id = 300;
+
 /*Exercici 3. Programar un trigger que comprovi que la comissió mai sigui més gran que el salari a l’hora d’inserir
 un empleat. El trigger s’anomenarà trig_comissio. Mostra els missatges d’error corresponents quan es dispari el
 trigger i escriu el joc de proves que has fet per provar el trigger.*/
-
 
 CREATE OR REPLACE FUNCTION func_trig_comissio() RETURNS TRIGGER AS $$
 BEGIN
@@ -63,6 +80,12 @@ CREATE TRIGGER trig_comissio
 BEFORE INSERT OR UPDATE ON employees
 FOR EACH ROW
 EXECUTE PROCEDURE func_trig_comissio();
+
+/*Joc de proves*/
+/* Aquest Update no petarà*/
+UPDATE employees SET commission_pct = 0.1 WHERE employee_id = 300;
+/* Aquest Update petarà*/
+UPDATE employees SET commission_pct = 1000 WHERE employee_id = 300;
 
 /*Exercici 4. Programar un trigger associat a la taula EMPLOYEES que faci fallar qualsevol operació de
 modificació del first_name o del codi de l’empleat o que suposi una pujada de sou superior al 10%. El trigger
@@ -88,6 +111,12 @@ CREATE TRIGGER trig_errada_modificacio
 BEFORE UPDATE ON employees
 FOR EACH ROW
 EXECUTE PROCEDURE func_trig_errada_modificacio();
+
+/*Joc de proves*/
+UPDATE employees SET first_name = 'Jordi' WHERE employee_id = 100;
+UPDATE employees SET employee_id = 300 WHERE employee_id = 100;
+UPDATE employees SET salary = 1000 WHERE employee_id = 100;
+
 
 /*Exercici 5. Programar un trigger anomenat trig_auditartaulaemp i que permeti auditar les operacions
 d’inserció, actualització o d’esborrat de dades que es realitzaran a la taula EMPLOYEES. El resultat de
@@ -117,3 +146,8 @@ AFTER INSERT OR UPDATE OR DELETE ON employees
 FOR EACH ROW
 EXECUTE PROCEDURE func_trig_auditartaulaemp();
 
+/*Joc de proves*/
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id) VALUES (300, 'Jordi', 'Sancho', 'jsancho', '123456789', '2019-01-01', 'IT_PROG', 1000, 0.1, 100, 90);
+UPDATE employees SET salary = 1000 WHERE employee_id = 300;
+DELETE FROM employees WHERE employee_id = 300;
+SELECT * FROM resauditaremp;
